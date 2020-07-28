@@ -1,0 +1,2 @@
+# FlutterNative
+现有Android项目和iOS项目引入同一个Flutter项目
