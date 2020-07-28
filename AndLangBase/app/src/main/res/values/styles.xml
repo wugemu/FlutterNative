@@ -8,4 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="flutterTheme" parent="@style/AppTheme.LangNoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
 </resources>

@@ -3,9 +3,14 @@ package com.lang.andlang2;
 import com.example.test.andlang.andlangutil.BaseLangApplication;
 import com.example.test.andlang.http.HttpConfig;
 import com.example.test.andlang.util.MMKVUtil;
+import com.lang.andlang2.flutil.FlutterUtil;
 import com.lang.andlang2.util.PushUtil;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.commonsdk.UMConfigure;
+
+import io.flutter.embedding.engine.FlutterEngine;
+import io.flutter.embedding.engine.FlutterEngineCache;
+import io.flutter.embedding.engine.dart.DartExecutor;
 
 public class AndLangApp extends BaseLangApplication {
     @Override
@@ -61,5 +66,7 @@ public class AndLangApp extends BaseLangApplication {
         //app 后台前台 切换监听
         initBackgroundCallBack();
 
+        //flutter 初始化
+        FlutterUtil.initFlutter(this);
     }
 }

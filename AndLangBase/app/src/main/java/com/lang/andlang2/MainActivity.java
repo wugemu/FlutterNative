@@ -8,6 +8,7 @@ import com.example.test.andlang.andlangutil.BaseLangActivity;
 import com.example.test.andlang.util.ActivityUtil;
 import com.example.test.andlang.util.BaseLangUtil;
 import com.example.test.andlang.util.ToastUtil;
+import com.lang.andlang2.flutil.FlutterUtil;
 import com.lang.andlang2.persenter.MainPersenter;
 import com.lang.andlang2.util.Constants;
 
@@ -59,8 +60,7 @@ public class MainActivity extends BaseLangActivity<MainPersenter> {
     @OnClick(R.id.btn_jump)
     public void clickJump(){
         //跳转
-        Intent intent=new Intent(MainActivity.this,MainActivity.class);
-        ActivityUtil.getInstance().start(MainActivity.this,intent);
+        FlutterUtil.startFlutterActivity(MainActivity.this,"");
     }
 
 }
