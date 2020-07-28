@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.huawei.android.hms:push:2.6.1.301@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2697eb71fa63d41cf27348e51621c21b/push-2.6.1.301/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2697eb71fa63d41cf27348e51621c21b/push-2.6.1.301/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2697eb71fa63d41cf27348e51621c21b/push-2.6.1.301/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.huawei.android.hms/push/2.6.1.301/3aec68a96ef4e3d73008ab9c47348380427ca0b3/push-2.6.1.301-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.huawei.android.hms/push/2.6.1.301/6008eb08337feec5698808ce45ea3cfbcca07b6c/push-2.6.1.301-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

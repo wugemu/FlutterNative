@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./nysoutil/libs/umeng-analytics-7.5.4.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/nysoutil/libs/umeng-analytics-7.5.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

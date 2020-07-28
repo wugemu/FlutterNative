@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./langpush/libs/com.coloros.mcssdk.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/langpush/libs/com.coloros.mcssdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

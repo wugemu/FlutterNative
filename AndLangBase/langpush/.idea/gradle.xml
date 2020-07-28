@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/.." />
+            <option value="$PROJECT_DIR$/../FlycoBanner_Lib" />
+            <option value="$PROJECT_DIR$/../UdeskSDKUI" />
+            <option value="$PROJECT_DIR$/../andlang" />
+            <option value="$PROJECT_DIR$/../app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/../mytablayout" />
+            <option value="$PROJECT_DIR$/../ptrlib" />
+            <option value="$PROJECT_DIR$/../pulltorefresh" />
+            <option value="$PROJECT_DIR$/../weexsdk" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

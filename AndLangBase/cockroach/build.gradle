@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+uploadArchives {
+    configuration = configurations.archives
+    repositories {
+        mavenDeployer {
+            repository(url: "http://192.168.11.244:8086/repository/nysoapp/"){
+                authentication(userName: "", password: "")
+            }
+            pom.project {
+                version '1.0.0'
+                artifactId 'cockroach'
+                groupId 'com.nyso.library'
+                packaging 'aar'
+                description '防崩溃库'
+            }
+        }
+    }
+}
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api 'me.weishu:free_reflection:1.2.0'
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../FlycoBanner_Lib/FlycoBanner_Lib.iml" filepath="$PROJECT_DIR$/../FlycoBanner_Lib/FlycoBanner_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SuDian_And.iml" filepath="$PROJECT_DIR$/../SuDian_And.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../UdeskSDKUI/UdeskSDKUI.iml" filepath="$PROJECT_DIR$/../UdeskSDKUI/UdeskSDKUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../andlang/andlang.iml" filepath="$PROJECT_DIR$/../andlang/andlang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/langpush.iml" filepath="$PROJECT_DIR$/langpush.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mytablayout/mytablayout.iml" filepath="$PROJECT_DIR$/../mytablayout/mytablayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ptrlib/ptrlib.iml" filepath="$PROJECT_DIR$/../ptrlib/ptrlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/../pulltorefresh/pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../weexsdk/weexsdk.iml" filepath="$PROJECT_DIR$/../weexsdk/weexsdk.iml" />
+    </modules>
+  </component>
+</project>
