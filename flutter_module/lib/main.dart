@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
-
-void main() => runApp(MyApp());
+import 'dart:ui';
+import 'package:flutter_module/common/LogUtil.dart';
+import 'package:flutter_module/common/RouteUtil.dart';
+void main() {
+  LogUtil.showLog("原生传递的参数："+window.defaultRouteName);
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -20,9 +25,18 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       initialRoute:"/",
-      home: MyHomePage(title: 'Flutter Module'),
+      routes:RouteUtil.initRouteMap(context),
+      home:initRoute(window.defaultRouteName),
     );
   }
+}
+
+Widget initRoute(String adrUrl){
+  Widget widget=RouteUtil.initRoute(window.defaultRouteName);
+  if(widget==null){
+    widget=MyHomePage(title: 'Flutter Module');
+  }
+  return widget;
 }
 
 class MyHomePage extends StatefulWidget {
@@ -55,6 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
+    RouteUtil.goWhere(context, "https://m.sudian178.com");
   }
 
   @override
