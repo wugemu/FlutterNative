@@ -109,7 +109,7 @@
 
 //跳转flutter页面
 -(void)jumpFlutter{
-    [FlutterUtil pushFlutterVC:self withRoute:@""];
+    [FlutterUtil pushFlutterVC:self withRoute:@"https://m.sudian178.com"];
 }
 
 

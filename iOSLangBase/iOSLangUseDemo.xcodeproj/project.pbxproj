@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00434CD9C26CF0102BEDE47C /* Pods_iOSLangUseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B20B21CAF3F4A8EDB0966F8 /* Pods_iOSLangUseDemo.framework */; };
 		407A252322C49BCA00863C85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A252222C49BCA00863C85 /* AppDelegate.m */; };
 		407A252922C49BCA00863C85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407A252722C49BCA00863C85 /* Main.storyboard */; };
 		407A252B22C49BD000863C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407A252A22C49BD000863C85 /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		407A254722C49EA400863C85 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A254122C49EA400863C85 /* MyViewController.m */; };
 		407A254822C49EA400863C85 /* WebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A254222C49EA400863C85 /* WebViewVC.m */; };
 		4082ADF524D11AB200A7D09C /* FlutterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4082ADF424D11AB200A7D09C /* FlutterUtil.m */; };
-		84A263FB310F1C2CC9C3E63C /* libPods-iOSLangUseDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F521B9710628A652CB82234 /* libPods-iOSLangUseDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 		407A254922C49FAD00863C85 /* ioslang.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioslang.pch; sourceTree = "<group>"; };
 		4082ADF424D11AB200A7D09C /* FlutterUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterUtil.m; sourceTree = "<group>"; };
 		4082ADF624D11AC800A7D09C /* FlutterUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlutterUtil.h; sourceTree = "<group>"; };
-		5F521B9710628A652CB82234 /* libPods-iOSLangUseDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLangUseDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B20B21CAF3F4A8EDB0966F8 /* Pods_iOSLangUseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSLangUseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC1EC85986E50148553FC5C /* Pods-iOSLangUseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLangUseDemo.debug.xcconfig"; path = "Target Support Files/Pods-iOSLangUseDemo/Pods-iOSLangUseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FF2D5B566D2F11BABB2631A8 /* Pods-iOSLangUseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLangUseDemo.release.xcconfig"; path = "Target Support Files/Pods-iOSLangUseDemo/Pods-iOSLangUseDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A263FB310F1C2CC9C3E63C /* libPods-iOSLangUseDemo.a in Frameworks */,
+				00434CD9C26CF0102BEDE47C /* Pods_iOSLangUseDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 		288FF9068F21246315F2921C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F521B9710628A652CB82234 /* libPods-iOSLangUseDemo.a */,
+				9B20B21CAF3F4A8EDB0966F8 /* Pods_iOSLangUseDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,7 +166,6 @@
 				407A251A22C49BCA00863C85 /* Sources */,
 				407A251B22C49BCA00863C85 /* Frameworks */,
 				407A251C22C49BCA00863C85 /* Resources */,
-				A4A8A8DFA8F2EC89D0CF58EF /* [CP] Copy Pods Resources */,
 				8F9B0867B217C0B7A2A21D27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -239,23 +238,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSLangUseDemo/Pods-iOSLangUseDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A4A8A8DFA8F2EC89D0CF58EF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSLangUseDemo/Pods-iOSLangUseDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSLangUseDemo/Pods-iOSLangUseDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSLangUseDemo/Pods-iOSLangUseDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BBB640DE22BE1F444FE6E2F1 /* [CP] Check Pods Manifest.lock */ = {

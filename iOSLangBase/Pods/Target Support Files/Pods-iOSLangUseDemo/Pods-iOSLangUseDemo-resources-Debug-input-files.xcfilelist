@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-iOSLangUseDemo/Pods-iOSLangUseDemo-resources.sh
+${PODS_ROOT}/../../flutter_module/.ios/Flutter/.symlinks/flutter_inappwebview/ios/Storyboards/WebView.storyboard
 ${PODS_ROOT}/iOSLang/iOSLangTest/IosLangTest/ioslang/res/langBack@2x.png
 ${PODS_ROOT}/iOSLang/iOSLangTest/IosLangTest/ioslang/res/langBack@3x.png
 ${PODS_ROOT}/iOSLang/iOSLangTest/IosLangTest/ioslang/res/loading@2x.png

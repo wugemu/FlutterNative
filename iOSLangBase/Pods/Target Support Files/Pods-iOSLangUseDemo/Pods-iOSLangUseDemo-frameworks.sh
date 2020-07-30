@@ -198,11 +198,27 @@ fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine/Flutter.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/flutter_inappwebview/flutter_inappwebview.framework"
   install_framework "${PODS_ROOT}/../../flutter_module/.ios/Flutter/App.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/flutter_plugin_android_lifecycle/flutter_plugin_android_lifecycle.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/iOSLang/iOSLang.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/image_gallery_saver/image_gallery_saver.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/image_picker/image_picker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/path_provider/path_provider.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/shared_preferences/shared_preferences.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/webview_flutter/webview_flutter.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine/Flutter.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/flutter_inappwebview/flutter_inappwebview.framework"
   install_framework "${PODS_ROOT}/../../flutter_module/.ios/Flutter/App.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/flutter_plugin_android_lifecycle/flutter_plugin_android_lifecycle.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/iOSLang/iOSLang.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/image_gallery_saver/image_gallery_saver.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/image_picker/image_picker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/path_provider/path_provider.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/shared_preferences/shared_preferences.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/webview_flutter/webview_flutter.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

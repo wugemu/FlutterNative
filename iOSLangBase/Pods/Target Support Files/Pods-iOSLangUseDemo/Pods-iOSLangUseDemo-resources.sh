@@ -97,12 +97,14 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/../../flutter_module/.ios/Flutter/.symlinks/flutter_inappwebview/ios/Storyboards/WebView.storyboard"
   install_resource "${PODS_ROOT}/iOSLang/iOSLangTest/IosLangTest/ioslang/res/langBack@2x.png"
   install_resource "${PODS_ROOT}/iOSLang/iOSLangTest/IosLangTest/ioslang/res/langBack@3x.png"
   install_resource "${PODS_ROOT}/iOSLang/iOSLangTest/IosLangTest/ioslang/res/loading@2x.png"
   install_resource "${PODS_ROOT}/iOSLang/iOSLangTest/IosLangTest/ioslang/res/loading@3x.png"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/../../flutter_module/.ios/Flutter/.symlinks/flutter_inappwebview/ios/Storyboards/WebView.storyboard"
   install_resource "${PODS_ROOT}/iOSLang/iOSLangTest/IosLangTest/ioslang/res/langBack@2x.png"
   install_resource "${PODS_ROOT}/iOSLang/iOSLangTest/IosLangTest/ioslang/res/langBack@3x.png"
   install_resource "${PODS_ROOT}/iOSLang/iOSLangTest/IosLangTest/ioslang/res/loading@2x.png"

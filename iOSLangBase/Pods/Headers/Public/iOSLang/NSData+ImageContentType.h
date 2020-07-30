@@ -1,1 +1,0 @@
-../../../iOSLang/iOSLangTest/IosLangTest/ioslang/SDWebImage/NSData+ImageContentType.h

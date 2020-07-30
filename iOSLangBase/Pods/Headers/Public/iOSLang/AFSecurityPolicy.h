@@ -1,1 +1,0 @@
-../../../iOSLang/iOSLangTest/IosLangTest/ioslang/AFNetworking/AF/AFSecurityPolicy.h

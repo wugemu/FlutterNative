@@ -28,6 +28,27 @@
   "dependencies": {
     "Flutter": [
 
+    ],
+    "flutter_inappwebview": [
+
+    ],
+    "image_gallery_saver": [
+
+    ],
+    "image_picker": [
+
+    ],
+    "path_provider": [
+
+    ],
+    "permission_handler": [
+
+    ],
+    "shared_preferences": [
+
+    ],
+    "webview_flutter": [
+
     ]
   }
 }

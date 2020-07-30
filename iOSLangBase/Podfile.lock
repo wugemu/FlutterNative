@@ -1,16 +1,62 @@
 PODS:
   - Flutter (1.0.0)
+  - flutter_inappwebview (0.0.1):
+    - Flutter
   - flutter_module (0.0.1):
+    - Flutter
+  - flutter_plugin_android_lifecycle (0.0.1):
     - Flutter
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
+    - flutter_inappwebview
+    - image_gallery_saver
+    - image_picker
+    - path_provider
+    - permission_handler
+    - shared_preferences
+    - webview_flutter
+  - image_gallery_saver (1.5.0):
+    - Flutter
+  - image_picker (0.0.1):
+    - Flutter
   - iOSLang (1.0.0)
+  - path_provider (0.0.1):
+    - Flutter
+  - path_provider_linux (0.0.1):
+    - Flutter
+  - path_provider_macos (0.0.1):
+    - Flutter
+  - permission_handler (3.3.0):
+    - Flutter
+  - shared_preferences (0.0.1):
+    - Flutter
+  - shared_preferences_linux (0.0.1):
+    - Flutter
+  - shared_preferences_macos (0.0.1):
+    - Flutter
+  - shared_preferences_web (0.0.1):
+    - Flutter
+  - webview_flutter (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - Flutter (from `../flutter_module/.ios/Flutter/engine`)
+  - flutter_inappwebview (from `../flutter_module/.ios/Flutter/.symlinks/flutter_inappwebview/ios`)
   - flutter_module (from `../flutter_module/.ios/Flutter`)
+  - flutter_plugin_android_lifecycle (from `../flutter_module/.ios/Flutter/.symlinks/flutter_plugin_android_lifecycle/ios`)
   - FlutterPluginRegistrant (from `../flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - image_gallery_saver (from `../flutter_module/.ios/Flutter/.symlinks/image_gallery_saver/ios`)
+  - image_picker (from `../flutter_module/.ios/Flutter/.symlinks/image_picker/ios`)
   - iOSLang (= 1.0.0)
+  - path_provider (from `../flutter_module/.ios/Flutter/.symlinks/path_provider/ios`)
+  - path_provider_linux (from `../flutter_module/.ios/Flutter/.symlinks/path_provider_linux/ios`)
+  - path_provider_macos (from `../flutter_module/.ios/Flutter/.symlinks/path_provider_macos/ios`)
+  - permission_handler (from `../flutter_module/.ios/Flutter/.symlinks/permission_handler/ios`)
+  - shared_preferences (from `../flutter_module/.ios/Flutter/.symlinks/shared_preferences/ios`)
+  - shared_preferences_linux (from `../flutter_module/.ios/Flutter/.symlinks/shared_preferences_linux/ios`)
+  - shared_preferences_macos (from `../flutter_module/.ios/Flutter/.symlinks/shared_preferences_macos/ios`)
+  - shared_preferences_web (from `../flutter_module/.ios/Flutter/.symlinks/shared_preferences_web/ios`)
+  - webview_flutter (from `../flutter_module/.ios/Flutter/.symlinks/webview_flutter/ios`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -19,17 +65,56 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Flutter:
     :path: "../flutter_module/.ios/Flutter/engine"
+  flutter_inappwebview:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/flutter_inappwebview/ios"
   flutter_module:
     :path: "../flutter_module/.ios/Flutter"
+  flutter_plugin_android_lifecycle:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/flutter_plugin_android_lifecycle/ios"
   FlutterPluginRegistrant:
     :path: "../flutter_module/.ios/Flutter/FlutterPluginRegistrant"
+  image_gallery_saver:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/image_gallery_saver/ios"
+  image_picker:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/image_picker/ios"
+  path_provider:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/path_provider/ios"
+  path_provider_linux:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/path_provider_linux/ios"
+  path_provider_macos:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/path_provider_macos/ios"
+  permission_handler:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/permission_handler/ios"
+  shared_preferences:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/shared_preferences/ios"
+  shared_preferences_linux:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/shared_preferences_linux/ios"
+  shared_preferences_macos:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/shared_preferences_macos/ios"
+  shared_preferences_web:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/shared_preferences_web/ios"
+  webview_flutter:
+    :path: "../flutter_module/.ios/Flutter/.symlinks/webview_flutter/ios"
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_inappwebview: 69dfbac46157b336ffbec19ca6dfd4638c7bf189
   flutter_module: 37f078337caf8acad3074374a49bf81442fd3e07
-  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
+  flutter_plugin_android_lifecycle: dc0b544e129eebb77a6bfb1239d4d1c673a60a35
+  FlutterPluginRegistrant: d06f580ff3ede89bc1b2dff039cec8e68f04a234
+  image_gallery_saver: 259eab68fb271cfd57d599904f7acdc7832e7ef2
+  image_picker: 9c3312491f862b28d21ecd8fdf0ee14e601b3f09
   iOSLang: dfec4a20d8d6b626449477beeece55c91768337f
+  path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
+  path_provider_linux: 4d630dc393e1f20364f3e3b4a2ff41d9674a84e4
+  path_provider_macos: f760a3c5b04357c380e2fddb6f9db6f3015897e0
+  permission_handler: 67637977b227d62d46bfbf524f335f8568de5a73
+  shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
+  shared_preferences_linux: afefbfe8d921e207f01ede8b60373d9e3b566b78
+  shared_preferences_macos: f3f29b71ccbb56bf40c9dd6396c9acf15e214087
+  shared_preferences_web: 141cce0c3ed1a1c5bf2a0e44f52d31eeb66e5ea9
+  webview_flutter: d2b4d6c66968ad042ad94cbb791f5b72b4678a96
 
-PODFILE CHECKSUM: afd7d21a231a52b12269aafdc000cee88ed2a382
+PODFILE CHECKSUM: c568d6b5edb9b78dd114abe708f2ec8185b75a2e
 
 COCOAPODS: 1.9.1

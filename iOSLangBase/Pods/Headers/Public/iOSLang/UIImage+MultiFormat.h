@@ -1,1 +1,0 @@
-../../../iOSLang/iOSLangTest/IosLangTest/ioslang/SDWebImage/UIImage+MultiFormat.h

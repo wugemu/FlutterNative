@@ -8,6 +8,9 @@ target 'iOSLangUseDemo' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
+  use_frameworks!
+  use_modular_headers!
+
   pod 'iOSLang', '1.0.0'
 
   install_all_flutter_pods(flutter_application_path)
