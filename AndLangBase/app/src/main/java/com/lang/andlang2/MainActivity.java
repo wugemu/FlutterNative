@@ -12,6 +12,8 @@ import com.lang.andlang2.flutil.FlutterUtil;
 import com.lang.andlang2.persenter.MainPersenter;
 import com.lang.andlang2.util.Constants;
 
+import java.net.URLEncoder;
+
 import butterknife.BindView;
 import butterknife.OnClick;
 
@@ -60,7 +62,11 @@ public class MainActivity extends BaseLangActivity<MainPersenter> {
     @OnClick(R.id.btn_jump)
     public void clickJump(){
         //跳转
-        FlutterUtil.startFlutterActivity(MainActivity.this,"");
+        try {
+            FlutterUtil.startFlutterActivity(MainActivity.this,  "https://m.sudian178.com");
+        }catch (Exception e){
+
+        }
     }
 
 }

@@ -13,6 +13,7 @@ import io.flutter.embedding.engine.dart.DartExecutor;
 
 public class FlutterUtil {
     public static final String FLUTTER_ENGINE_ID="AndLangFlutter";
+
     public static void initFlutter(Context context){
         // Instantiate a FlutterEngine.
         FlutterEngine flutterEngine = new FlutterEngine(context);
@@ -29,14 +30,18 @@ public class FlutterUtil {
     }
     public static void startFlutterActivity(Activity activity,String route){
         if(!BaseLangUtil.isEmpty(route)){
-            FlutterEngineCache
-                    .getInstance().get(FLUTTER_ENGINE_ID).getNavigationChannel().setInitialRoute(route);
+            activity.startActivity(
+                    FlutterActivity
+                            .withNewEngine()
+                            .initialRoute(route)
+                            .build(activity)
+            );
+        }else {
+            activity.startActivity(
+                    FlutterActivity
+                            .withCachedEngine(FLUTTER_ENGINE_ID)
+                            .build(activity)
+            );
         }
-        activity.startActivity(
-                FlutterActivity
-                        .withCachedEngine(FLUTTER_ENGINE_ID)
-//                        .backgroundMode(FlutterActivityLaunchConfigs.BackgroundMode.transparent)
-                        .build(activity)
-        );
     }
 }
