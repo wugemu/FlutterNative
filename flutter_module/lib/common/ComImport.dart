@@ -9,3 +9,4 @@ export 'package:flutter_module/common/MMKUtil.dart';
 export 'package:flutter_module/common/RouteUtil.dart';
 export 'package:flutter/gestures.dart';
 export 'package:flutter_module/model/BaseBean.dart';
+export 'package:flutter_module/common/AndiOSUtil.dart';

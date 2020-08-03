@@ -1,6 +1,7 @@
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter_module/common/ComImport.dart';
 import 'dart:io';
+import 'package:flutter/services.dart';
 
 class InappWebviewR extends StatefulWidget {
   const InappWebviewR({Key key, @required this.url}) : super(key: key);
@@ -58,6 +59,19 @@ class _InappWebviewRState extends State<InappWebviewR> {
   Widget build(BuildContext context) {
     initUrlTitle();
     return Scaffold(
+      appBar: new AppBar(
+//        automaticallyImplyLeading:true,
+        leading: Builder(builder: (context) {
+          return IconButton(
+            icon: Icon(Icons.arrow_back, color: Colors.white), //自定义图标
+            onPressed: () {
+              // 返回
+              AndiOSUtil.exitApp();
+            },
+          );
+        }),
+        title: new Text(_title),
+      ),
       body: SafeArea(//设置安全区域 ，不沉浸式
           top: true,
           child:Builder(builder: (BuildContext context) {
