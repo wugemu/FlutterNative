@@ -59,8 +59,8 @@ public class MainActivity extends BaseLangActivity<MainPersenter> {
         presenter.reqVersion();
     }
 
-    @OnClick(R.id.btn_jump)
-    public void clickJump(){
+    @OnClick(R.id.btn_jump1)
+    public void clickJump1(){
         //跳转
         try {
             FlutterUtil.startFlutterActivity(MainActivity.this,  "https://m.sudian178.com");
@@ -69,4 +69,22 @@ public class MainActivity extends BaseLangActivity<MainPersenter> {
         }
     }
 
+    @OnClick(R.id.btn_jump2)
+    public void clickJump2(){
+        //跳转
+        try {
+            FlutterUtil.startFlutterActivity(MainActivity.this,  "https://m.mihui365.com");
+        }catch (Exception e){
+
+        }
+    }
+    @OnClick(R.id.btn_jump3)
+    public void clickJump3(){
+        //跳转
+        try {
+            FlutterUtil.startFlutterActivity(MainActivity.this,  "");
+        }catch (Exception e){
+
+        }
+    }
 }
