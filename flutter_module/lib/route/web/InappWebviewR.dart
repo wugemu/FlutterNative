@@ -57,43 +57,50 @@ class _InappWebviewRState extends State<InappWebviewR> {
   @override
   Widget build(BuildContext context) {
     initUrlTitle();
-    return InAppWebView(
-      initialUrl: _webUrl,
-      initialHeaders: {
-        "token": _cookie,
-      },
-      initialOptions: InAppWebViewGroupOptions(
-        crossPlatform: InAppWebViewOptions(
-          debuggingEnabled: false,
-        ),
-        ios: IOSInAppWebViewOptions(
-          allowsInlineMediaPlayback: true, //允许h5内视频播放
-        ),
-      ),
+    return Scaffold(
+      body: SafeArea(//设置安全区域 ，不沉浸式
+          top: true,
+          child:Builder(builder: (BuildContext context) {
+            return InAppWebView(
+              initialUrl: _webUrl,
+              initialHeaders: {
+                "token": _cookie,
+              },
+              initialOptions: InAppWebViewGroupOptions(
+                crossPlatform: InAppWebViewOptions(
+                  debuggingEnabled: false,
+                ),
+                ios: IOSInAppWebViewOptions(
+                  allowsInlineMediaPlayback: true, //允许h5内视频播放
+                ),
+              ),
 
-      onWebViewCreated: (InAppWebViewController controller) {
-        _webViewController = controller;
+              onWebViewCreated: (InAppWebViewController controller) {
+                _webViewController = controller;
 
-        //H5端调用获取token方法
+                //H5端调用获取token方法
 //        window.flutter_inappbrowser.callHandler('GetToken').then(function(result) {
 //          console.log(result);
 //        });
 
-        _webViewController.addJavaScriptHandler(
-            handlerName: "GetToken", callback: (args) {
-          LogUtil.showLog("收到来自web的消息" + args.toString());
-          return _cookie;
-        });
-      },
-      onLoadStart: (InAppWebViewController controller, String url) {
+                _webViewController.addJavaScriptHandler(
+                    handlerName: "GetToken", callback: (args) {
+                  LogUtil.showLog("收到来自web的消息" + args.toString());
+                  return _cookie;
+                });
+              },
+              onLoadStart: (InAppWebViewController controller, String url) {
 
-      },
-      onLoadStop: (InAppWebViewController controller, String url) async {
+              },
+              onLoadStop: (InAppWebViewController controller, String url) async {
 
-      },
-      onProgressChanged: (InAppWebViewController controller, int progress) {
+              },
+              onProgressChanged: (InAppWebViewController controller, int progress) {
 
-      },
+              },
+            );
+          },)
+      ),
     );
   }
 
