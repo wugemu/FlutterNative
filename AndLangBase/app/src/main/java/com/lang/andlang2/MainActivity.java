@@ -63,7 +63,7 @@ public class MainActivity extends BaseLangActivity<MainPersenter> {
     public void clickJump1(){
         //跳转
         try {
-            FlutterUtil.startFlutterActivity(MainActivity.this,  "https://m.sudian178.com");
+            FlutterUtil.startFlutterActivity(MainActivity.this,  "https://m.sudian178.com?title=测试1");
         }catch (Exception e){
 
         }
@@ -73,7 +73,7 @@ public class MainActivity extends BaseLangActivity<MainPersenter> {
     public void clickJump2(){
         //跳转
         try {
-            FlutterUtil.startFlutterActivity(MainActivity.this,  "https://m.mihui365.com");
+            FlutterUtil.startFlutterActivity(MainActivity.this,  "https://m.mihui365.com?title=测试2");
         }catch (Exception e){
 
         }
