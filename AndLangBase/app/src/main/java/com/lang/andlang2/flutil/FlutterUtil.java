@@ -28,6 +28,11 @@ public class FlutterUtil {
                 .getInstance()
                 .put(FLUTTER_ENGINE_ID, flutterEngine);
     }
+
+    /*
+    * route为空跳转默认路由
+    * route不空跳转该路由
+    * */
     public static void startFlutterActivity(Activity activity,String route){
         if(!BaseLangUtil.isEmpty(route)){
             activity.startActivity(
